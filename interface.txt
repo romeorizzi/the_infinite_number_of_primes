@@ -1,0 +1,27 @@
+function make_a_common_multiple_of_n_naturals(n, nats[]);
+function make_a_natural_bigger_than_and_not_divisible_by_any_of(n, nats[]);
+function make_a_new_prime_not_in_the_list(n, partial_list_of_primes[], rough_stone);
+
+main {
+    read n;
+    for i to n {
+        read nat[i];
+    }
+    call res1 = make_a_common_multiple_of_n_naturals(n, nat);
+    write res1;
+
+    read n1;
+    for i to n1 {
+        read nat1[i];
+    }
+    call res2 = make_a_natural_bigger_than_and_not_divisible_by_any_of(n1, nat1);
+    write res2;
+
+    read n3;
+    for i to n3 {
+        read p[i];
+    }
+    read rough_stone;
+    call res3 = make_a_new_prime_not_in_the_list(n3, p, rough_stone);
+    write res3;
+}
